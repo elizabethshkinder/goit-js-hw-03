@@ -1,12 +1,13 @@
 function filterArray(numbers, value) {
-  const filter = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > value) {
-      filter.push(numbers[i]);
-    } else {
-      return filter;
+  const result = [];
+
+  for (const num of numbers) {
+    if (num > value) {
+      result.push(num);
     }
   }
+
+  return result;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
