@@ -3,9 +3,9 @@ function makeArray(firstArray, secondArray, maxLength) {
 
   if (merge.length > maxLength) {
     return merge.slice(0, maxLength);
+  } else {
+    return merge;
   }
-
-  return merge;
 }
 
 console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3)); // ["Mango", "Poly", "Ajax"]
